@@ -1,12 +1,9 @@
 package net.azisaba.gracestopannouncer.velocity;
 
-import com.velocitypowered.api.scheduler.ScheduledTask;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicReference;
 import lombok.RequiredArgsConstructor;
 import net.azisaba.gracestopannouncer.core.ServerAdapter;
 import net.azisaba.gracestopannouncer.core.util.MessageFormatter;
@@ -18,9 +15,6 @@ public class VelocityServerAdapter implements ServerAdapter {
 
   private final GraceStopAnnouncerVelocity plugin;
   private final MessageFormatter messageFormatter;
-
-  private final AtomicReference<Integer> idProvider = new AtomicReference<>(0);
-  private final HashMap<Integer, ScheduledTask> taskMap = new HashMap<>();
 
   @Override
   public void executeAsyncAfter(Runnable runnable, long delay) {

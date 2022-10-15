@@ -40,14 +40,6 @@ public class HoldConnectionHandler {
 
     serverAdapter.executeAsyncAfter(
         () -> {
-          try {
-            Thread.sleep(3000);
-          } catch (InterruptedException e) {
-            completableFuture.complete(-1);
-            Thread.currentThread().interrupt();
-            return;
-          }
-
           int retryCount = 5;
           int remainingTime = -1;
 

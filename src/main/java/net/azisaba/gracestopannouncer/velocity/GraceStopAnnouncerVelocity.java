@@ -19,7 +19,7 @@ import net.azisaba.gracestopannouncer.velocity.config.GraceStopAnnouncerConfig;
 @Plugin(
     id = "gracestopannouncer",
     name = "GraceStopAnnouncer",
-    version = "1.0.0",
+    version = "1.0.1",
     url = "https://github.com/AzisabaNetwork/GraceStopAnnouncer",
     description = "Announce server shutdown to players.",
     authors = {"Azisaba Network"})
@@ -94,5 +94,7 @@ public class GraceStopAnnouncerVelocity {
   }
 
   @Subscribe
-  public void onProxyShutdown(ProxyShutdownEvent event) {}
+  public void onProxyShutdown(ProxyShutdownEvent event) {
+    logger.info("GraceStopAnnouncer is disabled.");
+  }
 }
