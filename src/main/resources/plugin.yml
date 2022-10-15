@@ -1,0 +1,7 @@
+name: ${project.name}
+version: ${project.version}
+main: net.azisaba.gracestopannouncer.bukkit.GraceStopAnnouncerBukkit
+api-version: 1.13
+description: ${project.description}
+author: ${project.organization.name}
+website: ${project.url}

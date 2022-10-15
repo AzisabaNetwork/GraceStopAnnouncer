@@ -1,0 +1,7 @@
+port: 50000
+
+message:
+  base: "&cこのサーバーは &e%time%後 &cに停止します！"
+  hour: "%h時間"
+  minute: "%m分"
+  second: "%s秒"
