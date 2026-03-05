@@ -111,3 +111,6 @@ buildNumber.properties
 # End of https://www.toptal.com/developers/gitignore/api/maven,intellij+all
 
 .vscode/
+
+# I dont want to this
+mise.toml
